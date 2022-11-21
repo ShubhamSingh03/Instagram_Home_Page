@@ -1,12 +1,14 @@
 import logo from "../assets/logo.png";
 import profileimg from "../assets/profile_img.jpg"
+import { FaRegUserCircle, FaRegBookmark } from 'react-icons/fa';
+import { AiOutlineSetting, AiOutlineUserSwitch } from "react-icons/ai";
 
 export const Navbar = () => {
   return (
     <>
-    <section className="flex justify-around max-w-full bg-white py-3 tablet:px-40 border-b-2 border-gray-200">
+    <section className="flex justify-between max-w-full bg-white py-3 tablet:px-40 border-b-2 border-gray-200">
     <div className="flex items-end">
-        <img src={logo} alt="logo" className="w-40 -ml-12 tablet:ml-0 tablet:w-24 " />
+        <img src={logo} alt="logo" className="w-28 ml-2 tablet:ml-0 tablet:w-24 " />
     </div>
     <div className="flex">
     <fieldset className="mr-20 hidden tablet:flex">
@@ -26,7 +28,7 @@ export const Navbar = () => {
         <div className="ml-0 hidden tablet:flex">
             <svg aria-label="Home" className="icons" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z"></path></svg>
         </div>
-        <div className="ml-5 absolute right-0 largeMobileScreens:static">
+        <div className="ml-5 absolute -left-12 largeMobileScreens:static">
             <svg aria-label="Direct" className="icons" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" strokeLinejoin="round" strokeWidth="2"></polygon></svg>
         </div>
         <div className="ml-5 hidden tablet:flex">
@@ -38,17 +40,26 @@ export const Navbar = () => {
         <div className="ml-5 hidden tablet:flex">
             <svg aria-label="Activity Feed" className="icons" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
         </div>
-        <div className='hidden tablet:flex'>
+        <div className='hidden tablet:block'>
             <div className="dropdown dropdown-end">
                 <button>
                     <img src={profileimg} alt="" className="rounded-full w-[24px] ml-6"/>
                 </button>
-                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded w-52">
-                    <li><a>Profile</a></li>
-                    <li><a>Saved</a></li>
-                    <li><a>Settings</a></li>
+                <ul tabIndex={0} className="dropdown-content pt-2  menu shadow bg-base-100 w-52">
+                    <li className="hover:bg-base-100 text-sm h-10">
+                        <a><FaRegUserCircle/>Profile</a>
+                    </li>
+                    <li className="hover:bg-base-100 text-sm h-10">
+                        <a><FaRegBookmark/>Saved</a>
+                    </li>
+                    <li className="hover:bg-base-100 text-sm h-10">
+                        <a><AiOutlineSetting/>Settings</a>
+                    </li>
+                    <li className="hover:bg-base-100 text-sm h-10 mb-1">
+                        <a><AiOutlineUserSwitch/>Swicth Accounts</a>
+                    </li>
                     <hr/>
-                    <li >Log Out</li>
+                    <li className="hover:bg-base-100 text-sm h-8 px-4 pt-2 mb-2">Log Out</li>
                 </ul>
             </div>
         </div>
