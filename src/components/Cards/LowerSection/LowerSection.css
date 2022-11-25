@@ -1,0 +1,6 @@
+.hoverEffect {
+    color: black;
+  }
+.hoverEffect:hover {
+    color: gray;
+}
