@@ -6,7 +6,7 @@ import { AiOutlineSetting, AiOutlineUserSwitch } from "react-icons/ai";
 export const Navbar = () => {
   return (
     <>
-    <section className="flex justify-between max-w-full bg-white py-3 tablet:px-40 border-b-2 border-gray-200">
+    <section className="flex justify-between max-w-full bg-white py-3 tablet:px-40 border-b border-gray-200 sticky top-0 z-999">
     <div className="flex items-end">
         <img src={logo} alt="logo" className="w-28 ml-2 tablet:ml-0 tablet:w-24 " />
     </div>
