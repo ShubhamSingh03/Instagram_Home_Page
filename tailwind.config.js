@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         bgColor: '#FAFAFA',
         linkColor: '#169EF6',
+        linkUnActiveColor: '#D1EDFD',
       }
     },
   },
