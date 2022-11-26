@@ -6,11 +6,11 @@ import { VscBookmark } from "react-icons/vsc";
 import "./LowerSection.css";
 import randomInteger from 'random-int';
 
-
+//{/* Lower Section Of Post (Just Below of Image) */}
 const LowerSection = ({details}) => {
   return (
     <>
-    <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between">
 			<div className="flex items-center space-x-4">
 				<button type="button" title="Like post" className="flex items-center justify-center">
                     <IoMdHeartEmpty size={"28px"} className="hoverEffect"
@@ -38,6 +38,8 @@ const LowerSection = ({details}) => {
                 />
 			</button>
 		</div>
+
+		{/* random images for "LIKED BY:" from unsplash -static */}
         <div className="flex flex-wrap items-center pt-3 pb-1 pl-1">
 			<div className="flex items-center space-x-2">
 				<div className="flex -space-x-1">
@@ -51,6 +53,8 @@ const LowerSection = ({details}) => {
 				</span>
 			</div>
 		</div>
+
+		{/* Random no. of comments & hours */}
 		<div className="space-y-1 pl-1 pt-2">
 		    <p className="text-sm">
 				<span className="text-sm font-semibold">{details.login?.username}</span> <QuotesApi/></p>
@@ -63,6 +67,7 @@ const LowerSection = ({details}) => {
   )
 }
 
+// Radnom Quotes as an Status Component
 const QuotesApi = () =>{
 	const url = "https://api.quotable.io/random?minLength=40&maxLength=70"
 		const[quotesDetails, setQuotesDetails] = useState([])

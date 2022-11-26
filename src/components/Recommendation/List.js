@@ -1,3 +1,5 @@
+// footer items of recommendation section
+
 function List() {
   return (
     <>

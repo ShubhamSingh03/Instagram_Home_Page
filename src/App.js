@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Feed from './components/Feed';
+import Footer from './components/Footer';
 import {Navbar} from './components/Navbar';
 import Recommendation from './components/Recommendation/Recommendation'
 import Story from './components/Story';
@@ -22,6 +23,7 @@ function App({details}) {
       <div >
       </div>
     </div>
+    <Footer/>
     </>
   );
 }
