@@ -26,7 +26,7 @@ const Story = () => {
           <img alt="" className="w-14 h-14 rounded-full ring-2 ring-offset-2 bg-gray-500 ring-pink-400 ring-offset-white hover:scale-110 hover:transition-all hover:ease-in-out" src={faker.image.avatar()} />
           <p className="text-xs text-center w-14 truncate">{faker.internet.userName()}</p>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-2 hidden tablet:block">
           <img alt="" className="w-14 h-14 rounded-full ring-2 ring-offset-2 bg-gray-500 ring-pink-400 ring-offset-white hover:scale-110 hover:transition-all hover:ease-in-out" src={faker.image.avatar()} />
           <p className="text-xs text-center w-14 truncate">{faker.internet.userName()}</p>
         </div>
