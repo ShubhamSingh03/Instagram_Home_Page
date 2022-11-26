@@ -12,9 +12,9 @@ const ProfileBar = () => {
             <a href="https://rb.gy/h92miy">
                 <p className="font-bold text-sm cursor-pointer">bgmi_lit_clips</p>
             </a> 
-            <h3 className="uppercase font-normal tracking-tighter text-gray-400">Battlegrounds Mobile I...</h3>
+            <h3 className="uppercase font-normal tracking-tighter text-gray-400 w-[11.45rem] truncate">Battlegrounds Mobile India</h3>
         </div>
-        <a href="#" className="text-linkColor font-semibold text-xs flex items-center pl-8">Switch</a>
+        <a href="" className="text-linkColor font-semibold text-xs flex items-center pl-8">Switch</a>
     </div>
     </>
   )
